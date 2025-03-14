@@ -2,7 +2,7 @@ module.exports = {
   mega: {
   accounts: [
     {
-      email: "johanvelasquez927@gmail.com",
+      email: "sotoian093@gmail.com",
       password: "GilgameshCaster1"
     }
   ],
