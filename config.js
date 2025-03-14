@@ -1,13 +1,12 @@
 module.exports = {
   mega: {
-    accounts: (process.env.MEGA_ACCOUNT|| "johanvelasquez927@gmail.com:GilgameshCaster1") //email:password
-      .split(";")
-      .map(a => {
-        const [email, password] = a.split(":");
-        return email && password ? { email, password } : null;
-      })
-      .filter(Boolean),
-    storagePath: "./storage"
+  accounts: [
+    {
+      email: "johanvelasquez927@gmail.com",
+      password: "GilgameshCaster1"
+    }
+  ],
+  storagePath: "./storage"
   },
   server: {
     port: process.env.PORT || 3000,
@@ -108,5 +107,5 @@ module.exports = {
     max: 100,
     timeWindow: '1 minute' //100 req per minute change to ur need
   },
-  storage: process.env.TEMP || 'memory', // 'file' or 'memory' based on ur needs
+  storage: 'memory', // 'file' or 'memory' based on ur needs
 };
