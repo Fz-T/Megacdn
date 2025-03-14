@@ -1,6 +1,6 @@
 module.exports = {
   mega: {
-    accounts: (process.env.MEGA_ACCOUNT|| "ironman@onlyfans.com:katarenai nemurenai toroimerai") //email:password
+    accounts: (process.env.MEGA_ACCOUNT|| "johanvelasquez927@gmail.com:GilgameshCaster1") //email:password
       .split(";")
       .map(a => {
         const [email, password] = a.split(":");
